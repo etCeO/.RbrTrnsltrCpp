@@ -1,6 +1,6 @@
 # .RbrTrnsltrCpp
 
-- A program that takes in a txt script file and translates it into an html in the Robber Language
+- A program that parses a text-based script file and translates it into structured HTML using the Robber Language, demonstrating file processing, custom language translation, and automated web-oriented output generation.
 
 # AUTHOR INFO
 
