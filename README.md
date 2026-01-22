@@ -2,7 +2,7 @@
 
 - A program that parses a text-based script file and translates it into structured HTML using the Robber Language, demonstrating file processing, custom language translation, and automated web-oriented output generation.
 
-# AUTHOR INFO
+## Author Info
 
 - Full Name: Ethan E. Lopez
 - Student ID: 2425516
