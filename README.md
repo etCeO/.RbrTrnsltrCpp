@@ -107,7 +107,7 @@ The case sensitivity is to be maintained throughout.
 - Sends content to Translator for translation
 - Manages file validation and input data parsing
 
-**Translator**:
+**Translator**
 - Iterates over all characters in the string
 - Determines whether the character is a consonant or vowel
 - Implements rules for the Robber Language
@@ -116,7 +116,7 @@ The case sensitivity is to be maintained throughout.
    - Punctuation
    - Spacing
 
-**Model**:
+**Model**
 - Used to highlight singular, structural translations between consonants vs. vowels.
 
 **HTML Generation**
