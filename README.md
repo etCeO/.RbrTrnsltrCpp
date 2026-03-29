@@ -117,11 +117,7 @@ The case sensitivity is to be maintained throughout.
    - Spacing
 
 **Model**:
-- Used to represent complex inputs like:
-  - Paragraphs
-  - Lines
-  - Words/Tokens
-- Helps to decouple the translation from the formatting
+- Used to highlight singular, structural translations between consonants vs. vowels.
 
 **HTML Generation**
 - Wraps the translation in basic HTML tags
