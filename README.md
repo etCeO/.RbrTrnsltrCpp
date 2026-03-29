@@ -58,17 +58,87 @@ Vowels remain unchanged:
 Example Translation
 
 Original | Robber Language
-hello	   | hohelollolo
-cat	     | cocatot
-robbers	 | rorobobboberorsos
+- hello	   | hohelollolo
+- cat	     | cocatot
+- robbers	 | rorobobboberorsos
 
 Example Execution
 - ./robber Input.txt
 
 Example Output (conceptual HTML file):
 
-<html>
-  <body>
-    <p>Hohelollolo wowororloldod!</p>
-  </body>
-</html>
+- <html>
+  - <body>
+    - <p>Hohelollolo wowororloldod!</p>
+  - </body>
+- </html>
+
+## Input Format
+
+The program takes a plain text file as an input that contains the text to be translated.
+
+#### Expected Structure
+
+- The text in any number of lines
+- No specific structure required unless more features are added
+
+Example (Input.txt):
+
+- Hello world!
+- This is a test.
+- Robber language is fun.
+
+#### Rules
+
+The text in the input may contain:
+1. Letters (both lowercase and uppercase)
+2. Spaces
+3. Punctuation marks
+
+The case sensitivity is to be maintained throughout.
+
+## Implementation Details
+
+### Core Components
+---
+
+**File Processor**
+- Opens and reads the file line by line
+- Sends content to Translator for translation
+- Manages file validation and input data parsing
+
+**Translator**:
+- Iterates over all characters in the string
+- Determines whether the character is a consonant or vowel
+- Implements rules for the Robber Language
+- Preserves:
+   - Capitalization (if implemented)
+   - Punctuation
+   - Spacing
+
+**Model**:
+- Used to represent complex inputs like:
+  - Paragraphs
+  - Lines
+  - Words/Tokens
+- Helps to decouple the translation from the formatting
+
+**HTML Generation**
+- Wraps the translation in basic HTML tags
+- Output is:
+  - Printed to console
+  - Written to an output file named output.html
+
+### Algorithm Overview
+---
+
+1. Open the file
+2. For each line in the file
+   - For each character in the line
+      - If character is a consonant
+         - Append transformed character to output string
+         - Transformed character = original consonant + 'o' + original consonant
+      - Else
+         - Append original character to output string
+3. Wrap output string in HTML tags
+4. Output the result
